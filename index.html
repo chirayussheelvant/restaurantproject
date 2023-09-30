@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project2.css">
+    <!-- <link rel="stylesheet" media="" ref="phone.css"> -->
+    <script>
+        function hello()
+        {
+            alert("Please Login");
+        }
+        function check()
+        {
+            alert("You are successfully registered")
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"> <a href="#">Home</a> </li>
+            <li class="item"> <a href="#serv">Services</a> </li>
+            <li class="item"> <a href="#home">About Us</a> </li>
+            <li class="item"> <a href="#conn">Contact Us</a> </li>
+            <li class="item"> <a href="#acc">Join Us</a> </li>
+            <li class="item"> <a href="chat.html">Chat with us</a> </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 id="head">Welcome to Dine In Restaurant</h1>
+        <div class="para">
+            <p>We aim to provide you variety of cuisines.</p>
+            <p>Each cuisine containing variety of dishes with a lot of discounts.</p>
+            <p>So go ashead and order now.</p>
+        </div>
+        <button class="btn" onclick="hello()">Order Now</button>
+    </section>
+    
+    <h1 class="service">Services Offered By Us</h1>
+    <section id="serv">
+        <div id="services">
+            <div class="box">
+                <img src="bg2.jpg" alt="">
+                <h2>Food Ordering</h2>
+                <p>You order food online from our website and make a contactless payment for your great meal. Order now to enjoy a delicious meal.</p>
+            </div>
+            <div class="box">
+                <img src="bg3.jpg" alt="">
+                <h2>Food Catering</h2>
+                <p>We cater food of any cuisine to any number of people for various functions and celebrations. So have a great celebration with our food.</p>
+            </div>
+            <div class="box">
+                <img src="bg4.jpg" alt="">
+                <h2>Dine In Restaurants</h2>
+                <p>You can also have fresh and hot food prepared by our highly trained chefs in our restaurants at various locations.</p>
+            </div>
+        </div>
+    </section>
+    <section id="acc">
+        <div class="sign">
+            <h3>Register</h3>
+            <form action="" class="reg">
+                <div class="form">
+                    Enter your name: 
+                    <input type="text" required>
+                </div>
+                <div class="form">
+                    Enter your mobile number:
+                    <input type="text" required >
+                </div>
+                <div class="form">
+                    Enter your email ID:
+                    <input type="text" required>
+                </div>
+                <div class="form">
+                    Enter new username:
+                    <input type="text" required>
+                </div>
+                <div class="form">
+                    Enter new password:
+                    <input type="text" required>
+                </div>
+                <div class="form">
+                    Confirm password:
+                    <input type="text" required>
+                </div>
+                
+            <button class="btns1" onclick="check()">Sign In</button>
+            <p>Already have an account? Proceed to login</p>
+            </form>
+        </div>
+        <div class="log">
+            <h3>Login</h3>
+            <form action="prog2i2.html" class="reg">
+                <div class="form1">
+                    Enter your username: 
+                    <input type="text" required>
+                </div>
+                <div class="form1">
+                    Enter your password:
+                    <input type="text" required>
+                </div>
+                <button class="btns">Log In</button>
+             <p>Don't have an account? Proceed to register</p>   
+            </form>
+            <h1 class="contact" id="conn">Contact Us</h1>
+            <p>Mobile: 9876543210</p>
+            <p>Email: dinein@gmail.com</p>
+        </div>
+    </section>
+</body>
+
+</html>

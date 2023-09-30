@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proj23.css">
+    <script>
+        function getans()
+        {
+            var ques={"hello":"Hi",
+            "hi":"Hello",
+            "how are you":"Good",
+            "who are you":"I am a chatbot who will help you get answers to your queries.",
+            "what is the name of the restaurant":"Dine In Restaurant",
+            "which is the cheepest dish":"Tandoori Roti (Rs. 25)",
+            "which is the most expensive dish":"Paneer Butter Masala (Rs. 200)",
+            "which is your signature dish":"All are signature dishes but Veg Manchow Soup is the speciality (Rs. 100)",
+            "which is the most selling dish":"Veg Manchow Soup and Veg Biryani",
+            "how much time you take for delivery":"Around 30 min but depends on various factors",
+            "ok bye":"Thank you so much."
+            };
+            var a=document.getElementById('quer').value;
+            a=a.toLowerCase();
+            if(a in ques)
+            document.getElementById('ans').innerHTML=ques[a];
+            else
+            document.getElementById('ans').innerHTML="Sorry, I don't have answer to this question";
+        }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"> <a href="index.html">Home</a> </li>
+            <!-- <li class="item"> <a href="#serv">Services</a> </li> -->
+            <li class="item"> <a href="#home">Queries</a> </li>
+            <!-- <li class="item"> <a href="#conn">Contact Us</a> </li> -->
+            <!-- <li class="item"> <a href="#acc"></a> </li> -->
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 id="head">Welcome to Dine In Restaurant</h1>
+        <div class="para">
+            <p>Please ask your queries: </p>
+        </div>
+        <div id="dat" class="para">
+            <!-- Initialize with some default content -->
+            <input type="text" id="quer" size="70">
+        </div>
+        <div>
+            <button class="btns1" onclick="getans()">Get Answer</button>
+        </div>
+        <p class="para" id="ans">
+            
+        </p>
+        
+            
+    </section>
+
+</body>
+</html>

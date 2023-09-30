@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    /* margin: 20px */
+    /* justify-content: center; */
+}
+#logo{
+    margin: 10px;
+}
+#logo img{
+    height: 50px;
+    margin: 10px;
+}
+#navbar ul{
+    margin: 0px 100px;
+    display: flex;
+    background-color: brown;
+    border-radius: 20px;
+}
+#navbar{
+    position: relative;
+}
+#navbar ul li{
+    margin: 10px;
+    list-style: none;
+}
+#navbar::before{
+    content: "";
+    /* background-color:blue; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#navbar ul li a{
+    /* display: block; */
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    
+}
+#navbar ul li a:hover{
+    /* display: block; */
+    color: yellow;
+    text-decoration: none;
+    padding: 0px 20px;
+    background-color: green;
+    border-radius: 20px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    padding: 0px;
+    height: 300px;
+}
+#home::before{
+    content: "";
+    background: url('bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#head{
+    font-size: 30px;
+    padding: 10px;
+    margin: 100px 0px 30px 200px;
+    text-align: center;
+    color: rgb(59, 4, 117);
+}
+.para{
+    text-align: center;
+    /* font-size: 10px; */
+    padding: 5px;
+    color: azure;
+    margin: 10px 150px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.para p{
+    margin: 5px;
+}
+.btn{
+    padding: 5px;
+    border-radius: 10px;
+    color: red;
+    font-weight: bolder;
+    background-color: greenyellow;
+    margin: 30px 350px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: burlywood;
+    color: cyan;
+}
+#serv{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    height: 500px;
+}
+#serv::before{
+    content: ""; 
+    background-color: bisque;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.service{
+    font-size: 2rem;
+    padding: 12px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+h2{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+#services{
+    margin: 30px;
+    display: flex;
+    padding: 10px;
+}
+#services .box {
+    border: 4px solid rgb(34, 22, 148);
+    text-align: center;
+    width: 33%;
+    margin: 0px 10px;
+    position: relative;
+    top: 50px;
+    border-radius: 10px;
+}
+#services .box img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 10px auto;    
+}
+#acc{
+    display: flex;
+    padding: 0px;
+}
+#acc::before{
+    content: ""; 
+    background: url('bg5.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.sign{
+    /* border: 4px solid green; */
+    padding: 30px;
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+.btns{
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px 5px;
+    color: red;
+    font-weight: bolder;
+    background-color: greenyellow;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btns:hover{
+    background-color: darkblue;
+    color: cyan;
+}
+.btns1{
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px 200px;
+    color: red;
+    font-weight: bolder;
+    background-color: greenyellow;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btns1:hover{
+    background-color: darkblue;
+    color: cyan;
+}
+.log{
+    /* border: 4px solid green; */
+    padding: 50px;
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+.sign h3{
+    padding: 0px 10px;
+    font-size: 30px;
+    margin: 150px 100px 50px 300px;
+
+}
+.log h3{
+    padding: 0px 10px;
+    font-size: 30px;
+    margin: 125px 100px 50px 100px;
+}
+.form{
+    padding: 10px 10px;
+    font-size: 20px;
+    margin: 0px 0px 0px 200px;
+}
+.form1{
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.sign p{
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px 200px;
+    width: 100%;
+}
+.log p{
+    padding: 10px;
+    font-size: 20px;
+}
+input{
+    margin: 5px 5px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.contact{
+    margin: 100px 0px 50px 10px;
+    font-size: 30px;
+}

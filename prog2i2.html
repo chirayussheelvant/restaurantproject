@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proj23.css">
+    <script>
+        function calculateBill() {
+            var form = document.getElementById('orderForm');
+            var inputs = form.querySelectorAll('input[type="number"]');
+            var totalBill = 0;
+
+            inputs.forEach(function (input) {
+                if (input.value !== '') {
+                    var price = parseFloat(input.getAttribute('data-price'));
+                    var quantity = parseInt(input.value);
+                    totalBill += price * quantity;
+                }
+            });
+            if(totalBill==0)alert("Please choose a dish.");
+            else{// Display the total bill
+            document.getElementById("final").innerHTML = 'Your Total Bill is: Rs. ' + totalBill;
+            document.getElementById("ty").innerHTML='Thank you for Ordering. Have a great day.';}
+        }
+
+        function placeorder() {
+            calculateBill(); // Calculate the bill before displaying
+            return false;   
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"> <a href="index.html">Home</a> </li>
+            <!-- <li class="item"> <a href="#serv">Services</a> </li> -->
+            <li class="item"> <a href="#home">About You</a> </li>
+            <!-- <li class="item"> <a href="#conn">Contact Us</a> </li> -->
+            <li class="item"> <a href="#acc">Order</a> </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 id="head">Welcome to Dine In Restaurant</h1>
+        <div class="para">
+            <p>Your login time: </p>
+        </div>
+        <div id="dat" class="para">
+            <!-- Initialize with some default content -->
+            Loading...
+        </div>
+        <p class="para">
+            Please proceed down to enter food items quantity and place order.
+        </p>
+        <script>
+            // Move the script after the "dat" element
+            var a = document.getElementById("dat");
+            var da = new Date();
+            a.innerHTML = da.toLocaleString();
+        </script>
+        <!-- <button class="btn">Order Now</button> -->
+    </section>
+
+    <section id="acc">
+        <!-- <h2 id="menu">Menu</h2> -->
+        <div class="sign">
+            <form action="" class="reg" id="orderForm">
+
+                <h3 class="form3">Menu</h3>
+                <div class="form2">Soups</div>
+                <div class="form">
+                    Veg Manchow (Rs. 100)
+                    <input type="number" data-price="100" id="manch">
+                </div>
+                <div class="form">
+                    Veg Hot and Sour (Rs. 80)
+                    <input type="number" data-price="80">
+                </div>
+                <div class="form">
+                    Sweet Corn Soup (Rs. 70)
+                    <input type="number" data-price="70">
+                </div>
+                <div class="form2">Starters</div>
+                <div class="form">
+                    Gobi Manchurian (Rs. 80)
+                    <input type="number" data-price="80">
+                </div>
+                <div class="form">
+                    Babycorn Manchurian (Rs. 100)
+                    <input type="number" data-price="100">
+                </div>
+                <div class="form">
+                    Paneer Manchurian (Rs. 120)
+                    <input type="number" data-price="120">
+                </div>
+                <div class="form2">Breads</div>
+                <div class="form">
+                    Tandoori Roti (Rs. 25)
+                    <input type="number" data-price="25">
+                </div>
+                <div class="form">
+                    Butter Roti (Rs. 30)
+                    <input type="number" data-price="30">
+                </div>
+                <div class="form">
+                    Butter Kulcha (Rs. 40)
+                    <input type="number" data-price="40">
+                </div>
+                <div class="form">
+                    Butter Naan (Rs. 50)
+                    <input type="number" data-price="50">
+                </div>
+                <!-- <p>Already have an account? Proceed to login</p> -->
+
+                <!-- <form action="prog2i1.html" class="reg" id="or"> -->
+        
+                <div class="form2">Main Course</div>
+                <div class="form">
+                    Veg Kolhapuri (Rs. 160)
+                    <input type="number" data-price="160">
+                </div>
+                <div class="form">
+                    Veg Kadai (Rs. 160)
+                    <input type="number" data-price="160">
+                </div>
+                <div class="form">
+                    Paneer Butter Masala (Rs. 200)
+                    <input type="number" data-price="200">
+                </div>
+                <div class="form">
+                    Aloo Gobi (Rs. 140)
+                    <input type="number" data-price="140">
+                </div>
+                <div class="form">
+                    Dal Tadka (Rs. 120)
+                    <input type="number" data-price="120">
+                </div>
+                <div class="form">
+                    Dal Fry (Rs. 100)
+                    <input type="number" data-price="100">
+                </div>
+                <div class="form2">Rice and Noodles</div>
+                <div class="form">
+                    Veg Noodles (Rs. 120)
+                    <input type="number" data-price="120">
+                </div>
+                <div class="form">
+                    Veg Biryani (Rs. 200)
+                    <input type="number" data-price="200">
+                </div>
+                <div class="form">
+                    Veg Fried Rice (Rs. 120)
+                    <input type="number" data-price="120">
+                </div>
+                <div class="form">
+                    Jeera Rice (Rs. 90)
+                    <input type="number" data-price="90">
+                </div>
+                <div class="form">
+                    Veg Pulao (Rs. 140)
+                    <input type="number" data-price="140">
+                </div>
+                <!-- <button class="btns">Log In</button> -->
+                <!-- <p>Don't have an account? Proceed to register</p>    -->
+                <h2></h2>
+                <h2></h2>
+                <button class="btns1" onclick="return placeorder()">Place Order</button>
+                <h2></h2>
+            <h2 class="form" id="final">Your Total Bill is: Rs. 0</h2>
+            <h2 class="form" id="ty"></h2> 
+            </form>
+            
+        </div>
+        
+    </section>
+</body>
+
+</html>
