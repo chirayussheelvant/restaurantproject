@@ -78,7 +78,7 @@ Used Microsoft Visual Studio Code to develop the application website using HTML,
 
 ![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/63a0de3b-8c30-4c00-84cb-f8347b8ba69a)
 
-![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/f34bd39a-d0e9-49f7-974c-4cebe9a7489d)
+![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/284d0859-7eec-41ee-9137-aa639f71c524)
 
 # Link for the Website: - 
 
