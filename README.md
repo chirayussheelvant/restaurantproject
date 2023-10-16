@@ -63,12 +63,10 @@ This is the chat with us window where the user can ask questions or queries rela
 
 # Deployment
 
-Used Azure App Service to deploy the website developed using Microsoft Azure. This image shows the app is deployed and running. 
+Used Azure App Service, Azure Static Web App to deploy the website developed using Microsoft Azure. This image shows the app is deployed and running. 
 The link for the website is given in the image. 
 
 ![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/35d8af2b-d5bb-4396-89cb-8d6e9511144d)
-
-Used Static Web App for the deploayment of a static website.
 
 ![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/4fe70b30-86a3-4b1a-8691-c844bf01fdfa)
 
@@ -80,9 +78,7 @@ Used Microsoft Visual Studio Code to develop the application website using HTML,
 
 ![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/63a0de3b-8c30-4c00-84cb-f8347b8ba69a)
 
-![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/4f5321ee-df2b-44c4-bc9c-e4317f13743b)
-
-![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/292b8a28-98ee-4571-a108-9eb1884415a4)
+![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/f34bd39a-d0e9-49f7-974c-4cebe9a7489d)
 
 # Link for the Website: - 
 
