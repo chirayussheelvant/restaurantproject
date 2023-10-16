@@ -20,13 +20,13 @@
                 }
             });
             if(totalBill==0)alert("Please choose a dish.");
-            else{// Display the total bill
+            else{
             document.getElementById("final").innerHTML = 'Your Total Bill is: Rs. ' + totalBill;
             document.getElementById("ty").innerHTML='Thank you for Ordering. Have a great day.';}
         }
 
         function placeorder() {
-            calculateBill(); // Calculate the bill before displaying
+            calculateBill(); 
             return false;   
         }
     </script>
