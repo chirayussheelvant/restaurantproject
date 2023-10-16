@@ -75,3 +75,6 @@ Used Microsoft Visual Studio Code to develop the application website using HTML,
 ![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/c37c6633-f2d9-4a49-bbca-ba215ec37e53)
 
 ![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/63a0de3b-8c30-4c00-84cb-f8347b8ba69a)
+
+Link for the Website: - https://icy-desert-0980e3410.3.azurestaticapps.net
+Link for the demonstration video: - 
