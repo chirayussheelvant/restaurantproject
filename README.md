@@ -16,4 +16,7 @@ CSS
 
 JavaScript
 
+# Website Tour
+
+![image](https://github.com/chirayussheelvant/restaurantproject/assets/113765834/ebde7c89-c4cc-4d18-9c5b-b7acff415c2a)
 
