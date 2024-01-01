@@ -20,12 +20,20 @@
             "how much time you take for delivery":"Around 30 min but depends on various factors",
             "ok bye":"Thank you so much."
             };
-            var a=document.getElementById('quer').value;
-            a=a.toLowerCase();
-            if(a in ques)
-            document.getElementById('ans').innerHTML=ques[a];
-            else
-            document.getElementById('ans').innerHTML="Sorry, I don't have answer to this question";
+            var a = document.getElementById('quer').value.toLowerCase();
+            var found = false;
+
+            for (var key in ques) {
+                if (ques.hasOwnProperty(key) && key.includes(a)) {
+                    document.getElementById('ans').innerHTML = ques[key];
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                document.getElementById('ans').innerHTML = "Sorry, I don't have an answer to this question";
+            }
         }
     </script>
 </head>
